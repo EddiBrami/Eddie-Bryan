@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Encriptador</title>
+  </head>
+  <body>
+    <!-- HEADER-LOGO -->
+    <img src="./img/Vector.png" alt="logo" class="logo" />
+    <!-- MAIN TEXTO -->
+    <main class="contenedor">
+      <section class="contenedor-texto">
+        <textarea
+          name="Texto"
+          class="text-area"
+          cols="30"
+          rows="10"
+          placeholder="Escriba el texto aquí. . ." ></textarea>
+          <div class="contenedor-botones">
+            <button class="btn btn-enc" onclick="btnEncriptar()">Encriptar</button>
+            <button class="btn btn-desc" onclick="btnDesencriptar()">Desencriptar</button>
+          </div>
+      </section>
+      <!-- MAIN TEXTO 2 -->
+      <section class="contenedor-texto__Encriptado">
+        <textarea name="texto" class="mensaje"></textarea>
+        <div class="texto-empty">
+          <img src="./img/designer.svg" alt="Imagen de diseñador." class="designer">
+          <h2 class="texto-slider">Ningún mensaje por codificar.</h2>
+          <p class="">Aquí estará el texto que desee codificar.</p>
+        </div>
+      </section>
+      <button class="btn btn-copy" onclick="copiarTexto()">Copiar</button>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
